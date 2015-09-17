@@ -82,7 +82,7 @@ let ScatterPlot = React.createClass({
 	},
 
 	_tooltipHtml(d, position) {
-		return this.props.tooltipHtml(this.props.x(d), this.props.y(d));
+		return this.props.tooltipHtml(this.props.x(d), this.props.y(d), d);
 	},
 
 	render() {
