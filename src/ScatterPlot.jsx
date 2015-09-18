@@ -45,7 +45,7 @@ let DataSet = React.createClass({
 					className="dot"
 					d={symbol()}
 					transform={translate}
-					fill={colorScale(label(stack))}
+					fill={e.hasOwnProperty('color') ? e.color : colorScale(label(stack))}
 					onMouseOver={ evt => { onMouseEnter(evt, e); } }
 					onMouseLeave={  evt => { onMouseLeave(evt); } }
 						/>
